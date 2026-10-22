@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center"
+           >
+
+            <Label
+            Text="Quiz História"
+            FontSize="50"
+            HorizontalTextAlignment="Center"/>
+            
+           
+
+        <Button
+                x:Name="btnInicio"
+                Text="Iniciar Quiz" 
+                Clicked="OnClicked"
+                HorizontalOptions="Fill"
+            />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
