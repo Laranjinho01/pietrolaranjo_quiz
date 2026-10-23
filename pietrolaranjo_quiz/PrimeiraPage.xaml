@@ -3,19 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pietrolaranjo_quiz.PrimeiraPage"
              Title="PrimeiraPage">
+    <ScrollView>
     <VerticalStackLayout
         Padding="30,0"
         Spacing="25">
+            
         <Label 
-            Text="Quem foi o primeiro imperador do Império Romano?"
-            FontSize="25"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+                Text="Qual era a principal base da economia e da geração de riqueza no Império Romano?"
+                FontSize="25"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Center"/>
 
-        <Image
-            Source="pergunta1.png"
-            MaximumHeightRequest="250"
-            />
+       <Image
+             Source="pergunta1.png"
+             MaximumHeightRequest="250"/>
+        
+        <VerticalStackLayout Spacing="10" Padding="20">
 
-    </VerticalStackLayout>
+
+            <RadioButton Content="A agricultura, combinada com a exploração do trabalho escravo e a posse de terras" Value="Certo" IsChecked="True" />
+            <RadioButton Content="O comércio de títulos de dívida pública e ações" Value="Errado" />
+            <RadioButton Content="O monopólio estatal da indústria têxtil mecanizada" Value="Errado" />
+            <RadioButton Content="A arrecadação de royalties sobre o licenciamento do direito de cidadania" Value="Errado" />
+            
+        </VerticalStackLayout>
+
+            <Button
+                Text="Enviar"
+                Clicked="OnEnviarClicked"
+                HorizontalOptions="Fill"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -6,4 +6,10 @@ public partial class PrimeiraPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnEnviarClicked(object sender, EventArgs e)
+    {
+		int cont = 0;
+		cont++;
+    }
 }

@@ -13,7 +13,9 @@
             <Label
             Text="Quiz História"
             FontSize="50"
-            HorizontalTextAlignment="Center"/>
+            HorizontalOptions="Center"
+            
+            />
             
            
 
