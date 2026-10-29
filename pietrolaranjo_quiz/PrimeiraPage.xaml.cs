@@ -1,3 +1,5 @@
+
+
 namespace pietrolaranjo_quiz;
 
 public partial class PrimeiraPage : ContentPage
@@ -9,7 +11,12 @@ public partial class PrimeiraPage : ContentPage
 
     private void OnEnviarClicked(object sender, EventArgs e)
     {
-		int cont = 0;
-		cont++;
+        if (radioButtonA.IsChecked)
+        {
+            ScoreStore.Points += ScoreStore.Points;
+            DisplayAlert.Show("Parabens","Você acertou. Sua pontuação é: " + ScoreStore.Points + "/10","Ok");
+        }
+       
+        
     }
 }

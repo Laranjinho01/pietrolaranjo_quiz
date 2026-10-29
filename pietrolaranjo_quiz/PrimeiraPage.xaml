@@ -22,10 +22,10 @@
         <VerticalStackLayout Spacing="10" Padding="20">
 
 
-            <RadioButton Content="A agricultura, combinada com a exploração do trabalho escravo e a posse de terras" Value="Certo" IsChecked="True" />
-            <RadioButton Content="O comércio de títulos de dívida pública e ações" Value="Errado" />
-            <RadioButton Content="O monopólio estatal da indústria têxtil mecanizada" Value="Errado" />
-            <RadioButton Content="A arrecadação de royalties sobre o licenciamento do direito de cidadania" Value="Errado" />
+                <RadioButton x:Name="radioButtonA"  Content="A agricultura, combinada com a exploração do trabalho escravo e a posse de terras" Value="Certo" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="O comércio de títulos de dívida pública e ações" Value="Errado"/>
+                <RadioButton x:Name="radioButtonC"  Content="O monopólio estatal da indústria têxtil mecanizada" Value="Errado"/>
+                <RadioButton x:Name="radioButtonD"  Content="A arrecadação de royalties sobre o licenciamento do direito de cidadania" Value="Errado"/>
             
         </VerticalStackLayout>
 
