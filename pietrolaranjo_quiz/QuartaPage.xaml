@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.QuartaPage"
+             Title="QuartaPage">
+    <ScrollView>
+        <VerticalStackLayout
+ Padding="30,0"
+ Spacing="25">
+
+            <Label 
+         Text="Qual foi a principal consequência da Revolução Francesa?"
+         FontSize="25"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" 
+         HorizontalTextAlignment="Center"/>
+
+            <Image
+      Source="pergunta1.png"
+      MaximumHeightRequest="250"/>
+
+            <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="O fortalecimento da monarquia absoluta." Value="Errado" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="A criação de novas colônias." Value="Errado"/>
+                <RadioButton x:Name="radioButtonC"  Content="O fim dos privilégios da nobreza e a defesa da igualdade." Value="Certo"/>
+                <RadioButton x:Name="radioButtonD"  Content="O aumento do poder dos reis." Value="Errado"/>
+            </VerticalStackLayout>
+
+            <Button
+         Text="Enviar"
+         Clicked="OnEnviarClicked"
+         HorizontalOptions="Fill"
+         />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

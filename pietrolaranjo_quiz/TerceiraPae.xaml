@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.TerceiraPae"
+             Title="TerceiraPae">
+    <ScrollView>
+        <VerticalStackLayout
+Padding="30,0"
+Spacing="25">
+
+            <Label 
+        Text="O que foi o Iluminismo?"
+        FontSize="25"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        HorizontalTextAlignment="Center"/>
+
+            <Image
+     Source="pergunta1.png"
+     MaximumHeightRequest="250"/>
+
+            <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="Um movimento que defendia o poder absoluto dos reis." Value="Errado" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="Um movimento intelectual que defendia a razão, a liberdade e a igualdade." Value="Certo"/>
+                <RadioButton x:Name="radioButtonC"  Content="Uma guerra entre países europeus." Value="Errado"/>
+                <RadioButton x:Name="radioButtonD"  Content="Um movimento que defendia a escravidão." Value="Errado"/>
+            </VerticalStackLayout>
+
+            <Button
+        Text="Enviar"
+        Clicked="OnEnviarClicked"
+        HorizontalOptions="Fill"
+        />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
