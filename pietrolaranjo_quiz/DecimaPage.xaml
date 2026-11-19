@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.DecimaPage"
+             Title="DecimaPage">
+    <ScrollView>
+        <VerticalStackLayout
+Padding="30,0"
+Spacing="25">
+
+            <Label 
+        Text="Qual é a importância da democracia?"
+        FontSize="25"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        HorizontalTextAlignment="Center"/>
+
+            <Image
+     Source="pergunta10.png"
+     MaximumHeightRequest="250"/>
+
+            <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="Impedir a participação da população." Value="Errado" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="Concentrar todo o poder nas mãos de um rei." Value="Errado"/>
+                <RadioButton x:Name="radioButtonC"  Content="Acabar com as eleições." Value="Errado"/>
+                <RadioButton x:Name="radioButtonD"  Content="Permitir a participação da população nas decisões políticas." Value="Certo"/>
+            </VerticalStackLayout>
+
+            <Button
+        Text="Enviar"
+        Clicked="OnEnviarClicked"
+        HorizontalOptions="Fill"
+        />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

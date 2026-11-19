@@ -16,7 +16,7 @@ Spacing="25">
         HorizontalTextAlignment="Center"/>
 
             <Image
-     Source="pergunta1.png"
+     Source="pergunta3.jpg"
      MaximumHeightRequest="250"/>
 
             <VerticalStackLayout Spacing="10" Padding="20">

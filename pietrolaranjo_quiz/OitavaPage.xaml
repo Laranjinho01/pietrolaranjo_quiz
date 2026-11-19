@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.OitavaPage"
+             Title="OitavaPage">
+    <ScrollView>
+    <VerticalStackLayout
+Padding="30,0"
+Spacing="25">
+
+        <Label 
+        Text="Qual era o principal objetivo das Grandes Navegações?"
+        FontSize="25"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        HorizontalTextAlignment="Center"/>
+
+        <Image
+     Source="pergunta8.jpg"
+     MaximumHeightRequest="250"/>
+
+        <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="Encontrar novas rotas comerciais e riquezas." Value="Certo" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="Acabar com o comércio europeu." Value="Errado"/>
+                <RadioButton x:Name="radioButtonC"  Content="Evitar o contato com outros povos." Value="Errado"/>
+                <RadioButton x:Name="radioButtonD"  Content="Diminuir o território europeu." Value="Errado"/>
+        </VerticalStackLayout>
+
+        <Button
+        Text="Enviar"
+        Clicked="OnEnviarClicked"
+        HorizontalOptions="Fill"
+        />
+
+
+    </VerticalStackLayout>
+</ScrollView>
+</ContentPage>

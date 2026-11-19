@@ -18,6 +18,6 @@ public partial class QuartaPage : ContentPage
         {
             await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
         }
-        await Navigation.PushAsync(new SegundaPge());
+        await Navigation.PushAsync(new QuintaPage());
     }
 }

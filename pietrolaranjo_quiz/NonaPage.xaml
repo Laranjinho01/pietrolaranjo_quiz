@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.NonaPage"
+             Title="NonaPage">
+    <ScrollView>
+        <VerticalStackLayout
+Padding="30,0"
+Spacing="25">
+
+            <Label 
+        Text="O que aconteceu durante a colonização da África?"
+        FontSize="25"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        HorizontalTextAlignment="Center"/>
+
+            <Image
+     Source="pergunta9.png"
+     MaximumHeightRequest="250"/>
+
+            <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="Os países africanos dominaram a Europa." Value="Errado" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="Os europeus abandonaram o continente africano." Value="Errado"/>
+                <RadioButton x:Name="radioButtonC"  Content="Países europeus dominaram territórios africanos e exploraram suas riquezas." Value="Certo"/>
+                <RadioButton x:Name="radioButtonD"  Content="A África deixou de ter recursos naturais." Value="Errado"/>
+            </VerticalStackLayout>
+
+            <Button
+        Text="Enviar"
+        Clicked="OnEnviarClicked"
+        HorizontalOptions="Fill"
+        />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

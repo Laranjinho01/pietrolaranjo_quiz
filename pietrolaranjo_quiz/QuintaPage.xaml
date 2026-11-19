@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.QuintaPage"
+             Title="QuintaPage">
+    <ScrollView>
+        <VerticalStackLayout
+ Padding="30,0"
+ Spacing="25">
+
+            <Label 
+         Text="Como funcionava a escravidão no período colonial?"
+         FontSize="25"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" 
+         HorizontalTextAlignment="Center"/>
+
+            <Image
+      Source="pergunta5.jpg"
+      MaximumHeightRequest="250"/>
+
+            <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="Os escravizados trabalhavam livremente." Value="Errado" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="Os escravizados eram obrigados a trabalhar sem liberdade." Value="Certo"/>
+                <RadioButton x:Name="radioButtonC"  Content="Todos recebiam salários." Value="Errado"/>
+                <RadioButton x:Name="radioButtonD"  Content="Não existia exploração de trabalhadores." Value="Errado"/>
+            </VerticalStackLayout>
+
+            <Button
+         Text="Enviar"
+         Clicked="OnEnviarClicked"
+         HorizontalOptions="Fill"
+         />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

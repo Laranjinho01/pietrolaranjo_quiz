@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pietrolaranjo_quiz.SextaPage"
+             Title="SextaPage">
+    <ScrollView>
+        <VerticalStackLayout
+Padding="30,0"
+Spacing="25">
+
+            <Label 
+        Text="Qual foi um dos principais motivos da Independência do Brasil?"
+        FontSize="25"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        HorizontalTextAlignment="Center"/>
+
+            <Image
+     Source="pergunta6.jpg"
+     MaximumHeightRequest="250"/>
+
+            <VerticalStackLayout Spacing="10" Padding="20">
+
+
+                <RadioButton x:Name="radioButtonA"  Content="O desejo de continuar sendo uma colônia." Value="Errado" IsChecked="True"/>
+                <RadioButton x:Name="radioButtonB"  Content="A vontade de aumentar o domínio português." Value="Errado"/>
+                <RadioButton x:Name="radioButtonC"  Content="O desejo de conquistar autonomia política." Value="Certo"/>
+                <RadioButton x:Name="radioButtonD"  Content="A união com a Espanha." Value="Errado"/>
+            </VerticalStackLayout>
+
+            <Button
+        Text="Enviar"
+        Clicked="OnEnviarClicked"
+        HorizontalOptions="Fill"
+        />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
