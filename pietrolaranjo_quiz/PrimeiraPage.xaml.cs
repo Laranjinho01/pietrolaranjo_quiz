@@ -14,14 +14,14 @@ public partial class PrimeiraPage : ContentPage
         if (radioButtonA.IsChecked)
         {
             ScoreStore.Points = ScoreStore.Points + 1;
-            await DisplayAlert("Parabens!","Você acertou. Sua pontuação é: " + ScoreStore.Points + "/10","Ok");
+            await DisplayAlert("Parabens!","Você acertou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
         }
         else
         {
-            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
+            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10 \nResposta: A agricultura, combinada com a exploração do trabalho escravo e a posse de terras", "Ok");
         }
         await Navigation.PushAsync(new SegundaPge());
-
+        radioButtonA.IsEnabled = false;
 
     }
 }
