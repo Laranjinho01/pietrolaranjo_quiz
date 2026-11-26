@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pietrolaranjo_quiz.SegundaPge"
-             Title="SegundaPge">
+             Title="2)">
     <ScrollView>
         <VerticalStackLayout
     Padding="30,0"
@@ -16,7 +16,7 @@
             HorizontalTextAlignment="Center"/>
 
             <Image
-         Source="pergunta2.jpeg."
+         Source="pergunta2.jpeg"
          MaximumHeightRequest="250"/>
 
             <VerticalStackLayout Spacing="10" Padding="20">

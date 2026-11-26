@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pietrolaranjo_quiz.QuartaPage"
-             Title="QuartaPage">
+             Title="4)">
     <ScrollView>
         <VerticalStackLayout
  Padding="30,0"
@@ -16,7 +16,7 @@
          HorizontalTextAlignment="Center"/>
 
             <Image
-      Source="pergunta4..jpg"
+      Source="pergunta4.jpg"
       MaximumHeightRequest="250"/>
 
             <VerticalStackLayout Spacing="10" Padding="20">

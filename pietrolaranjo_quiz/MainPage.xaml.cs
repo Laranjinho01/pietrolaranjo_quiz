@@ -12,6 +12,7 @@
         private async void OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PrimeiraPage());
+            ScoreStore.Points = 0;
         }
     }
 }
