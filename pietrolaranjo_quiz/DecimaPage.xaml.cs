@@ -16,8 +16,12 @@ public partial class DecimaPage : ContentPage
         }
         else
         {
-            await DisplayAlert("Que pena!", "Você errou. Sua pontuação final foi: " + ScoreStore.Points + "/10", "Ok");
+            await DisplayAlert("Que pena!", "Você errou. Sua pontuação final foi: " + ScoreStore.Points + "/10 \nResposta: Permitir a participação da população nas decisões políticas.", "Ok");
         }
         await Navigation.PushAsync(new MainPage());
+        radioButtonA.IsEnabled = false;
+        radioButtonB.IsEnabled = false;
+        radioButtonC.IsEnabled = false;
+        radioButtonD.IsEnabled = false;
     }
 }

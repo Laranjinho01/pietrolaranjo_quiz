@@ -16,8 +16,12 @@ public partial class NonaPage : ContentPage
         }
         else
         {
-            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
+            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10 \nResposta: Países europeus dominaram territórios africanos e exploraram suas riquezas.", "Ok");
         }
         await Navigation.PushAsync(new DecimaPage());
+        radioButtonA.IsEnabled = false;
+        radioButtonB.IsEnabled = false;
+        radioButtonC.IsEnabled = false;
+        radioButtonD.IsEnabled = false;
     }
 }

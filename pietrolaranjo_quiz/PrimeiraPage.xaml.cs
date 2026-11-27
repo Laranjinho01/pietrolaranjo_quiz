@@ -22,6 +22,9 @@ public partial class PrimeiraPage : ContentPage
         }
         await Navigation.PushAsync(new SegundaPge());
         radioButtonA.IsEnabled = false;
+        radioButtonB.IsEnabled = false;
+        radioButtonC.IsEnabled = false;
+        radioButtonD.IsEnabled = false;
 
     }
 }

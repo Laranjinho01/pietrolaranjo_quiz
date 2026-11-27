@@ -16,8 +16,12 @@ public partial class QuintaPage : ContentPage
         }
         else
         {
-            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
+            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10 \nResposta: Os escravizados eram obrigados a trabalhar sem liberdade.", "Ok");
         }
         await Navigation.PushAsync(new SextaPage());
+        radioButtonA.IsEnabled = false;
+        radioButtonB.IsEnabled = false;
+        radioButtonC.IsEnabled = false;
+        radioButtonD.IsEnabled = false;
     }
 }

@@ -16,8 +16,12 @@ public partial class QuartaPage : ContentPage
         }
         else
         {
-            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
+            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10 \nResposta: O fim dos privilégios da nobreza e a defesa da igualdade.", "Ok");
         }
         await Navigation.PushAsync(new QuintaPage());
+        radioButtonA.IsEnabled = false;
+        radioButtonB.IsEnabled = false;
+        radioButtonC.IsEnabled = false;
+        radioButtonD.IsEnabled = false;
     }
 }

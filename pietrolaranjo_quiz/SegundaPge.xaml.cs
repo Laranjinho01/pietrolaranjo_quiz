@@ -16,8 +16,12 @@ public partial class SegundaPge : ContentPage
         }
         else
         {
-            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10", "Ok");
+            await DisplayAlert("Que pena!", "Você errou. Sua pontuação é: " + ScoreStore.Points + "/10 \nResposta: 1500", "Ok");
         }
         await Navigation.PushAsync(new TerceiraPae());
+        radioButtonA.IsEnabled = false;
+        radioButtonB.IsEnabled = false;
+        radioButtonC.IsEnabled = false;
+        radioButtonD.IsEnabled = false;
     }
 }
